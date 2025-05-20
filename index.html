@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-JavaScript</title>
+</head>
+<body>
+    <div>
+        <p id="message">JavaScript DOM</p>
+        
+    </div>
+    <div>
+        <input type="radio" name="language" id="" value="JS">
+        <input type="radio" name="language" id="" value="Python">
+    </div>
+
+    <div>
+        <h1>first headig</h1>
+        <h1>second headig</h1>
+        <h1>third headig</h1>
+        <h1>fourth headig</h1>
+    </div>
+     <div>
+        <h2 class="msg1">class document</h2>
+        <div id="container">
+        <h2 class="msg1">class document</h2>
+        <h2 class="msg1">class document</h2>
+        </div>
+     </div>
+
+    <script>
+        let msg = document.getElementById("message");
+        console.log(msg);
+
+        let btn = document.getElementsByName("language");
+        console.log(btn);
+
+        let heading = document.getElementsByTagName("h1");
+        console.log(heading);
+
+           let cont = document.getElementById("container");
+          let cls = cont.getElementsByClassName("msg1");
+          console.log(cls);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
