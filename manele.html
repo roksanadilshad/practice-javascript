@@ -17,10 +17,11 @@
         <li>Home</li>
         <li>About</li>
         <li>Blog</li>
-        <li>Project</li>
+        <li style="display: none;">Project</li>
      </ul>
 
     <script>
+        // creatElement()method
         let div = document.createElement("div");
         div.innerHTML = "<p>Welcome to Mymensingh</p>";
         /* div.className = "title"; */
@@ -30,13 +31,60 @@
         console.log(div);
 
 
-
+ //appendChild( Method)
         let menu = document.getElementById("menu");
         
-        let list = document.createElement("li");
-        list.innerHTML = "Contact";
+        //let list = document.createElement("li");
+        //list.innerHTML = "Contact";
+        //menu.appendChild(list);
+              
+        //console.log(menu.textContent);
+         
+          //menu.textContent = "hello!";
 
-        menu.appendChild(list);
+        //innerHTML(method)
+         //menu.innerHTML = "<h1>hello!</h1>"; 
+
+
+         //after(mathod)
+         // menu.after(node1,node2, ...nodeN);
+
+
+         //append(mathod)
+         //parentNode.append(newNodes);
+
+
+         //prepend(mathod)
+         //parentNode.prepend(newNodes);
+
+
+         //insertAdjacentHTML
+         //element. insertAdjacentHTML(positionName,text);
+         //menu.insertAdjacentHTML("beforeend", "<li>contact</li>");
+         //menu. insertAdjacentHTML("afterbegin", "<li>contact</li>");
+
+
+
+         //replaceChild(mathod)
+         //parentsNode.replaceChild(newChild,oldChild);
+
+
+         //cloneNode(mathod)
+         //let newNode = menu.cloneNode(false);
+         //console.log(newNode);
+         //let newNode = menu.cloneNode(true);
+         //console.log(newNode);
+
+
+         //removeChild (mathod)
+         //menu.removeChild(menu.firstElementChild);
+
+
+        //insertBefore(mathod)
+        //parentNode.insertBefore(newNode,existingNode);
+        //menu.insertBefore(newNode,menu.firstElementChild);
+
+         
     </script>
    
 </body>
