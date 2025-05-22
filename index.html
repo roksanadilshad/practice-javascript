@@ -23,11 +23,40 @@
     </div>
      <div>
         <h2 class="msg1">class document</h2>
+
         <div id="container">
         <h2 class="msg1">class document</h2>
         <h2 class="msg1">class document</h2>
         </div>
+
      </div>
+
+
+     <div>
+        <p class="mango">i like mango</p>
+        <div id="lichi">
+        <p class="mango">i like mango</p>
+        <p class="mango">i like mango</p>
+        </div>
+     </div>
+
+     <!-- traversing element -->
+
+     <div class="title">
+        <p class="text">Welcome to Bangladesh</p>
+     </div>
+ <!-- Select next siblings,previous siblings of an elements -->
+     <div class="title1">
+        <p>Welcome to Bangladesh 1</p>
+        <p class="second">Welcome to Bangladesh 2</p>
+        <p>Welcome to Bangladesh 3</p>
+        <p>Welcome to Bangladesh 4</p>
+     </div>
+
+ 
+
+
+    
 
     <script>
         let msg = document.getElementById("message");
@@ -42,6 +71,16 @@
            let cont = document.getElementById("container");
           let cls = cont.getElementsByClassName("msg1");
           console.log(cls);
+           
+          let lic = document.getElementById("lichi");
+          let man = lic.querySelectorAll(".mango");
+          console.log(man);
+
+          let txt = document.querySelector(".text");
+          console.log(txt.parentNode);
+
+          let second = document.querySelector(".second");
+          console.log(second.previousElementSibling);
     </script>
 
 
