@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        input{
+            background-color: #9c1b1b;
+            font-size: 20px;
+
+        }
+     </style>
+</head>
+<body>
+      <!-- <input type="text" name="" id="username" placeholder="username" style="background-color: red;
+      font-size: 20px;"> -->
+      <input type="text" name="" id="username" placeholder="username">
+
+
+      <script>
+        let inputBox = document.getElementById("username");
+/* getAttribute mathod 
+ console.log(inputBox.getAttribute("placeholder"));
+        console.log(inputBox.getAttribute("type")); */
+
+        /* setAttribute mathod 
+        inputBox.setAttribute("class","user");
+        console.log(inputBox);*/
+
+          /* has()Attribut 
+          console.log(inputBox.hasAttribute("class"));
+          console.log(inputBox.hasAttribute("id"));*/
+
+         /*  removeAttribute 
+         inputBox.removeAttribute("placeholder");
+         console.log(inputBox)*/
+
+        /* StyleProperty */
+        /*  console.log(inputBox.style);
+         console.log(inputBox.style.backgroundColor);
+         console.log(inputBox.style.fontSize); */
+          
+        /*  inputBox.style.padding = "10px";
+         console.log(inputBox) */
+
+
+         /*  cssText */
+       /*   inputBox.style.cssText = "width:200px"; */
+         /* inputBox.style.cssText += "margin:20px; height:100px";
+         inputBox.style.cssText += "margin:20px";
+         console.log(inputBox); */
+
+
+        /*  getComputeStyle */
+        console.log(window.getComputedStyle(inputBox).backgroundColor);
+        console.log(window.getComputedStyle(inputBox).fontSize);
+      </script>
+</body>
+</html>
